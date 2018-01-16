@@ -1,8 +1,6 @@
-import fetch from 'isomorphic-fetch';
+import {render} from "react-dom";
+import React from 'react';
+import PizzaApp from './components/PizzaApp';
 
-// Note: this is the entry point for the entire application
+render(<PizzaApp />, document.getElementById('container'));
 
-// step 1: you will need to load the pizza data. it is available at /pizza.json. what-wg fetch is pre-installed.
-// remember that fetch uses promises.
-
-// step 2: implement the view and required behaviors
